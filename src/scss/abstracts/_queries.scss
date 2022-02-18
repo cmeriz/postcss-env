@@ -1,0 +1,21 @@
+// media query breakpoints
+$breakpoints: (
+	'xxs':	20rem,
+	'xs':   30rem,
+	'sm':	40rem,
+    'md':	48rem,
+	'ml':   56rem,
+	'lg':	64rem,
+    'xl':	80rem,
+    'xxl':	96rem,
+);
+
+/*
+responsive breakpoint mixin:
+@include respond('medium') { ... }
+*/
+@mixin size($bp) {
+  @media (min-width: map-get($breakpoints, $bp)) {
+    @content;
+  }
+}
