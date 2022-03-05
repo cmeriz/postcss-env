@@ -1,0 +1,26 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color__white);
+
+    &__container {
+        padding: 1rem;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: var(--color__black);
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

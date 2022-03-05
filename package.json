@@ -1,44 +1,45 @@
 {
-  "name": "postcss-env",
-  "version": "1.0.0",
-  "description": "Multi-purpose PostCSS environment",
-  "main": "index.js",
-  "scripts": {
-    "css:basic": "postcss src/scss/main.scss --output build/css/main.css --env development --config ./config/ --verbose",
-    "css:dev": "postcss src/scss/main.scss --output build/css/main.css --env development --verbose",
-    "css:watch": "postcss src/scss/main.scss --output build/css/main.css --env development --verbose --watch",
-    "css:build": "postcss src/scss/main.scss --output build/css/main.css --env production --verbose"
-  },
-  "browserslist": [
-    "> 2%"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cmeriz/postcss-env.git"
-  },
-  "keywords": [
-    "postcss",
-    "css",
-    "scss"
-  ],
-  "author": "Carlos Merizalde",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cmeriz/postcss-env/issues"
-  },
-  "homepage": "https://github.com/cmeriz/postcss-env#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.2.4",
-    "cssnano": "^4.1.10",
-    "postcss": "^8.4.7",
-    "postcss-advanced-variables": "^3.0.1",
-    "postcss-assets": "^5.0.0",
-    "postcss-cli": "^8.3.1",
-    "postcss-extend-rule": "^4.0.0",
-    "postcss-hexrgba": "^2.0.1",
-    "postcss-map-get": "^0.2.9",
-    "postcss-nested": "^5.0.3",
-    "postcss-scss": "^3.0.4",
-    "postcss-sort-media-queries": "^3.3.3"
-  }
+    "name": "postcss-env",
+    "version": "1.0.0",
+    "description": "Multi-purpose PostCSS environment",
+    "main": "index.js",
+    "scripts": {
+        "start": "postcss src/scss/main.scss --output build/css/main.css --env development --verbose --watch",
+        "css:basic": "postcss src/scss/main.scss --output build/css/main.css --env development --config ./config/ --verbose",
+        "css:dev": "postcss src/scss/main.scss --output build/css/main.css --env development --verbose",
+        "css:watch": "postcss src/scss/main.scss --output build/css/main.css --env development --verbose --watch",
+        "css:build": "postcss src/scss/main.scss --output build/css/main.css --env production --verbose"
+    },
+    "browserslist": [
+        "> 2%"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cmeriz/postcss-env.git"
+    },
+    "keywords": [
+        "postcss",
+        "css",
+        "scss"
+    ],
+    "author": "Carlos Merizalde",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/cmeriz/postcss-env/issues"
+    },
+    "homepage": "https://github.com/cmeriz/postcss-env#readme",
+    "devDependencies": {
+        "autoprefixer": "^10.2.4",
+        "cssnano": "^4.1.10",
+        "postcss": "^8.4.7",
+        "postcss-advanced-variables": "^3.0.1",
+        "postcss-assets": "^5.0.0",
+        "postcss-cli": "^8.3.1",
+        "postcss-extend-rule": "^4.0.0",
+        "postcss-hexrgba": "^2.0.1",
+        "postcss-map-get": "^0.2.9",
+        "postcss-nested": "^5.0.3",
+        "postcss-scss": "^3.0.4",
+        "postcss-sort-media-queries": "^3.3.3"
+    }
 }

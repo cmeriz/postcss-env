@@ -1,0 +1,38 @@
+.theme {
+    // Light Theme
+
+    --color__gray--50: #{$color__gray--50};
+    --color__gray--100: #{$color__gray--100};
+    --color__gray--200: #{$color__gray--200};
+    --color__gray--300: #{$color__gray--300};
+    --color__gray--400: #{$color__gray--400};
+    --color__gray--500: #{$color__gray--500};
+    --color__gray--600: #{$color__gray--600};
+    --color__gray--700: #{$color__gray--700};
+    --color__gray--800: #{$color__gray--800};
+    --color__gray--900: #{$color__gray--900};
+
+    --color__white: #{$color__white};
+    --color__black: #{$color__black};
+    --color__white--solid: #{$color__white--solid};
+    --color__black--solid: #{$color__black--solid};
+
+    // Dark Theme
+    &--dark {
+        --color__gray--50: #{$color__gray--900};
+        --color__gray--100: #{$color__gray--800};
+        --color__gray--200: #{$color__gray--700};
+        --color__gray--300: #{$color__gray--600};
+        --color__gray--400: #{$color__gray--500};
+        --color__gray--500: #{$color__gray--400};
+        --color__gray--600: #{$color__gray--300};
+        --color__gray--700: #{$color__gray--200};
+        --color__gray--800: #{$color__gray--100};
+        --color__gray--900: #{$color__gray--50};
+
+        --color__white: #{$color__black};
+        --color__black: #{$color__white};
+        --color__white--solid: #{$color__black--solid};
+        --color__black--solid: #{$color__white--solid};
+    }
+}

@@ -1,25 +1,41 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
-  
+
 html {
     scroll-behavior: smooth;
+    font-size: 1rem;
 }
 
-body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
     @include reset;
 }
 
 body {
     text-rendering: optimizeSpeed;
+    font-family: $font__body;
+    font-size: 1rem;
 }
 
-img, picture {
+img,
+picture {
     max-width: 100%;
     display: block;
 }
 
-ul[class], ol[class] {
+ul[class],
+ol[class] {
     @include resetlist;
 
     li {
@@ -27,8 +43,18 @@ ul[class], ol[class] {
     }
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
+    all: unset;
     font: inherit;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    text-decoration: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -36,11 +62,12 @@ input, button, textarea, select {
         scroll-behavior: auto !important;
     }
 
-    *, *:before, *:after {
+    *,
+    *:before,
+    *:after {
         transition-timing-function: step-start !important;
         animation-delay: 0s !important;
         animation-timing-function: step-start !important;
         animation-iteration-count: 1 !important;
     }
 }
-  

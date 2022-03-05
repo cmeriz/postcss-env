@@ -1,0 +1,24 @@
+.btn {
+    padding: 0.5em 1em;
+    color: $color__white;
+    border-radius: 0.25em;
+    transition: outline 0.05s ease;
+    text-align: center;
+
+    &:focus {
+        outline: 3px solid;
+    }
+
+    &--primary {
+        @extend .btn;
+        background-color: $color__primary;
+
+        &:focus {
+            outline-color: $color__primary--300;
+        }
+
+        &:active {
+            background-color: $color__primary--600;
+        }
+    }
+}
